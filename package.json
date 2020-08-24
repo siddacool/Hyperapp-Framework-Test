@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "parcel ./public/index.html --open",
     "prebuild": "rimraf dist",
-    "build": "npm run prebuild && parcel build ./public/index.html --no-source-maps",
+    "build": "npm run prebuild && parcel build ./public/index.html --no-source-maps && source-map-explorer ./dist/*.js",
     "lite-server": "lite-server -c ./lite-server-config.json"
   },
   "keywords": [],
@@ -21,6 +21,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "lite-server": "^2.5.4",
     "parcel-bundler": "^1.12.4",
+    "parcel-plugin-bundle-visualiser": "^1.2.0",
     "postcss-modules": "^3.2.1",
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
