@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "serve": "parcel ./public/index.html",
+    "serve": "parcel ./public/index.html --open",
     "prebuild": "rimraf dist",
     "build": "npm run prebuild && parcel build ./public/index.html --no-source-maps",
     "lite-server": "lite-server -c ./lite-server-config.json"
